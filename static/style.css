@@ -1,0 +1,76 @@
+/* static/style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.lottery-numbers {
+    margin-top: 20px;
+}
+
+ul.centered-list {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.button-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-center form {
+    display: inline-block;
+}
+
+.button-center button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-center button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info .highlight {
+    font-weight: bold;
+    color: #007bff;
+}
