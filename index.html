@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>명수 로또 번호 추출기</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>명수의 로또 번호 추출기</h1>
+        <p></p>
+        <div class="lotto-numbers">
+            <h2>추출된 번호</h2>
+            <ul class="centered-list">
+                {% for numbers in lotto_numbers %}
+                <li>{{ numbers | join(', ') }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="button-center">
+            <form action="/" method="post">
+                <button type="submit">추출 재 생성</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p>도박 문의<br>
+            <span class="highlight">010-8855-2723</span><br>
+            당첨 시 뽀찌 10% 주이소</p>
+        </div>
+    </div>
+</body>
+</html>
